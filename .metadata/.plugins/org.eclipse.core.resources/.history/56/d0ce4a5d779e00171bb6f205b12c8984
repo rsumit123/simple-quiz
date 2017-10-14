@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+</head>
+<body>
+<script src="al.js"></script>
+<h2>
+Login
+</h2>
+ID: <br/><input id='id'/><br/>
+Password:<br/> <input id='pass' /><br/><br/><br/>
+<input type='button' onClick='check()' value='Submit' />
+<div id="output">validating.....</div>
+<script>
+function check() {
+	var r= '';
+	var obj1=null;
+	var i= 0;
+	var id= getValue('id');
+	var password= getValue('pass');
+	for(obj of U){
+		if(obj.id==id && obj.password==password){
+			i=1;
+			obj2=obj;
+			break;}
+		else{
+			i=0;}
+	}
+	if(i==0){
+		r+='Success <br> '+'Welcome'+obj2.name;
+		
+	}
+	else{
+		r+='Invalid User';
+	}
+	
+	document.getElementById('output').innerHTML=r
+}
+
+
+
+
+</script>
+
+</body>
+</html>

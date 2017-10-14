@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exam</title>
+</head>
+<body onload="some_script();">
+<script src="al.js"></script>
+<input type='button' onClick='logout()' value='logout' />
+
+<div id='output'></div>
+<script>
+function some_script() {
+    var r='';
+    r+=us.name;
+    document.getElementById='Welcome '+r;
+}
+
+
+
+</script>
+
+</body>
+</html>
